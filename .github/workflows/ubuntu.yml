@@ -27,7 +27,7 @@ jobs:
     - name: Build the app
       run: JAVA_HOME=$JAVA_HOME_17_X64 ./gradlew build
 
-    - name: rename apk
+    - name: rename apk?
       run: mv /home/runner/work/snapdroid/snapdroid/Snapcast/build/outputs/apk/release/Snapcast-release-unsigned.apk /home/runner/work/snapdroid/snapdroid/Snapcast/build/outputs/apk/release/Snapcast.apk 
 
     - uses: filippoLeporati93/android-release-signer@v1
